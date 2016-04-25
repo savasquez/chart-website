@@ -1,0 +1,16 @@
+<h1>New Record</h1>
+
+<form method="post" action="/photos">
+    
+    <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+    
+    <label form="caption">
+        Caption: <input type="text" id="caption" name="caption">
+    </label>     
+    <label form="photo">
+        Photo URL: <input type="text" id="photo" name="photo">
+    </label> 
+    
+    <input type="submit">
+    
+</form>
